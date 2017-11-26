@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="เพศ (Gender)" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="หญิง  (Female)" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชาย  (Male)" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="ชี่อ  (Name)" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+
+                    android:ems="10" >
+
+                   <!-- <requestFocus /> -->
+
+                </EditText>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="นามสกุล  (Last Name)" />
+
+
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+
+                    android:ems="10" >
+                </EditText>
+
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="horizontal"
+                android:layout_width="500dp"
+                android:layout_height="180dp" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:text=" อายุ (Age)  ปี-เดือน-วัน " />
+
+                <NumberPicker
+                    android:id="@+id/numberPicker1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                     />
+
+                <NumberPicker
+                    android:id="@+id/numberPicker2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+                <NumberPicker
+                    android:id="@+id/numberPicker3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="180dp" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:text=" การรักษาในปัจจุบัน (Treatment) " />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ผ่าตัด  (Surgery)" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เคมีบำบัด  (Chemotherapy)" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ฉายแสง  (Radiotherapy)" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ฮอร์โมน  (Hormone)" />
+
+
+                </RadioGroup>
+
+
+
+
+                </LinearLayout> >
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. คุณเข้านอนเมื่อเวลากี่โมง ( What time did you fall a sleep ? )" />
+
+                <TimePicker
+                    android:id="@+id/timePicker1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                   />
+
+
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. คุณตื่นนอนเมื่อเวลากี่โมง ( What did you get up this moring ? )" />
+
+                <TimePicker
+                    android:id="@+id/timePicker2"
+                    android:layout_width="200dp"
+
+                    android:layout_height="300dp"
+
+
+                    />
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. คุณตื่นนอนขณะหลับกี่ครั้ง (How many times did you wake up during you sleep ?)" />
+
+
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:ems="5"
+                    android:inputType="numberSigned" >
+
+                    <requestFocus />
+                </EditText>
+
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. คุณจะให้คะแนนของคุณภาพการนอนในระดับไหน ( How would you rate the quality of sleep last night ? )" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ดีมาก  (Very good)" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ปกติ  (Normal)" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ต่ำมากไม่ค่อยหลับเลย (Very Bad)" />
+
+
+
+
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. โปรดเลือกรูปภาพใบหน้าที่แสดงความรู้สึกได้ใกล้เคียงกับอารมณ์ของคุณมากที่สุดในขณะนี้ ( Please choose the experience that most closely matches your feeling. ) "
+                    />
+
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@android:drawable/btn_star" />
+
+    <RadioButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. ดีมาก" />
+
+
+
+</LinearLayout>
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@android:drawable/btn_star" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@android:drawable/btn_star" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@android:drawable/btn_star" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@android:drawable/btn_star" />
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. ดี" />
+
+
+
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@android:drawable/btn_star" />
+
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@android:drawable/btn_star" />
+
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@android:drawable/btn_star" />
+
+
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. ปานกลาง" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@android:drawable/btn_star" />
+
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@android:drawable/btn_star" />
+
+
+
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. พอใช้" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@android:drawable/btn_star" />
+
+
+
+
+
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. แย่" />
+
+
+
+                </LinearLayout>
+
+
+</RadioGroup>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. โปรดเลือกระดับความรู้สึกกังวล (  Please indicate the your anxiety level. )" />
+
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่รู้สึกกังวลเลย ( Not Anxious )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ปกติ ( Normal )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ตวิตกกังวลมาก ( Extremely Anxious )" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="400dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2 สัปดาห์ที่ผ่านมา บ่อยครั้งแค่ไหนที่คุณถูกรบกวนด้วยปัญหาดังกลาวต่อไปนี้
+( Over the last two weeks, how often have you been bothered by any of the following problems? )
+" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:text="1. มีความสนใจและยินดีเล็กน้อยในการทำสิ่งต่างๆ (Little interest or pleasure in doing things?)
+" />
+
+
+
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="2. รู้สึกแย่ลง  หดหู่  หรือ สิ้นหวังบ้างไหม?
+( Feeling down, depressed, or hopeless? )
+
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="3. มีปัญหากับการนอน ง่วงนอนตลอด หรือนอนมากเกินไป
+( Trouble falling or staying asleep too much? )
+
+
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="4. รู้สึกเหนื่อยหรือหมดแรงกำลังบ้างไหม?
+( Feeling tired or having little energy ? )
+
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="5. มีความอยากอาหารลดลง  หรือกินมากเกินไป ?
+( Poor appitite or overeating ? )
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="6. รู้สึกเลวร้ายกับตัวเอง หรือคุณเป็นคนที่ล้มเหลว หรือทำให้ตัวคุณเองและครอบครัวผิดหวัง ?
+( Feeling bad about yourself or that you are a failure or have you let yourself or your family down ? )
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="7. มีปัญหาเกี่ยวการทำสมาธิในการทำสิ่งใดสิ่งหนึ่ง เช่น อ่านหนังสือพิมพ์ หรือ ดูทีวี ?
+( Trouble concentrating on things, such as reading newspaper or watching television ? )
+
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="8. ไม่อยู่นิ่ง หรือพูดช้าเกินไป อยู่ไม่เป็นสุข ซึ่งบุคคลที่อยู่รอบข้างสามารถสังเกตได้ ?
+( Moving or speaking so slowly/ Restless that other people could have noticed ? )
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="9. คุณมีความคิดว่าการตายเป็นทางออกที่ดี หรือมีความคิดทำร้ายตัวเอง ?
+( Thoughts that you would be better of dead, or hurting yourself ? )
+
+" />
+
+                <RadioGroup
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เลย ( Not at all )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นอยู่หลายวัน ( Several days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นมากกว่า 7 วัน ( More than half the days )" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เป็นเกือบทุกวัน ( Nearly Every day )" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
+
+
+</ScrollView>
