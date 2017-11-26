@@ -343,273 +343,34 @@
 
 
 
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5. โปรดเลือกรูปภาพใบหน้าที่แสดงความรู้สึกได้ใกล้เคียงกับอารมณ์ของคุณมากที่สุดในขณะนี้ ( Please choose the experience that most closely matches your feeling. ) "
-                    />
-
-
-                <RadioGroup
-
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:orientation="horizontal"
-    android:layout_height="wrap_content">
 
 
 
 
 
-    <ImageButton
 
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:text="5. ให้คะแนนความรู้สึกที่ใกล้เคียงกับอารมณ์ของคุณมากที่สุดในขณะนี้ ( Please choose the experience that most closely matches your feeling. ) "
+        />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
         android:layout_centerHorizontal="true"
-
-        android:src="@android:drawable/btn_star" />
-
-    <ImageButton
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-
-        android:src="@android:drawable/btn_star" />
-
-    <ImageButton
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-
-        android:src="@android:drawable/btn_star" />
-
-    <ImageButton
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-
-        android:src="@android:drawable/btn_star" />
-
-    <ImageButton
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-
-        android:src="@android:drawable/btn_star" />
-
-    <RadioButton
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5. ดีมาก" />
-
-
-
-</LinearLayout>
-
-                <LinearLayout
-                android:layout_width="wrap_content"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-
-
-
-                <ImageButton
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-
-                    android:src="@android:drawable/btn_star" />
-
-                <ImageButton
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-
-                    android:src="@android:drawable/btn_star" />
-
-                <ImageButton
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-
-                    android:src="@android:drawable/btn_star" />
-
-                <ImageButton
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-
-                    android:src="@android:drawable/btn_star" />
-
-
-                    <RadioButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4. ดี" />
-
-
-
-
-
-            </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-
-
-
-                    <ImageButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-
-                        android:src="@android:drawable/btn_star" />
-
-                    <ImageButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-
-                        android:src="@android:drawable/btn_star" />
-
-                    <ImageButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-
-                        android:src="@android:drawable/btn_star" />
-
-
-
-
-
-                    <RadioButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3. ปานกลาง" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-
-
-
-                    <ImageButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-
-                        android:src="@android:drawable/btn_star" />
-
-                    <ImageButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-
-                        android:src="@android:drawable/btn_star" />
-
-
-
-
-
-
-                    <RadioButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2. พอใช้" />
-
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-
-
-
-                    <ImageButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-
-                        android:src="@android:drawable/btn_star" />
-
-
-
-
-
-
-
-
-                    <RadioButton
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1. แย่" />
-
-
-
-                </LinearLayout>
-
-
-</RadioGroup>
-
-
-
-
+        android:layout_marginBottom="34dp" />
 
 
 
                 <TextView
-                    android:layout_marginTop="10dp"
+
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

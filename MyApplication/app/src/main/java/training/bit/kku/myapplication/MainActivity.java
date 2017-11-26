@@ -1,8 +1,10 @@
 package training.bit.kku.myapplication;
 
+import android.app.AlertDialog;
 import android.app.TabActivity;
 import android.os.Bundle;
 import android.widget.NumberPicker;
+import android.widget.RatingBar;
 import android.widget.TabHost;
 
 public class MainActivity extends TabActivity {
@@ -59,7 +61,34 @@ public class MainActivity extends TabActivity {
         //imbtn.setImageResource(R.drawable.);
 */
 
+        final AlertDialog.Builder adb = new AlertDialog.Builder(this);
+        final RatingBar rating_Bar = (RatingBar)findViewById(R.id.ratingBar1);
+        rating_Bar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            public void onRatingChanged(RatingBar ratingBar, float rating,
+                                        boolean fromUser) {
 
+               // txtView1.setText("Your Selected : " + String.valueOf(rating));
+
+                AlertDialog ad = adb.create();
+                ad.setMessage(""+ String.valueOf(rating));
+                ad.show();
+                
+                /*
+                if( rating == 5 )
+                {   ad.setMessage("5. ดีมาก");  }
+                else if( rating == 4 )
+                {   ad.setMessage("4. ดี");  }
+               else if( rating == 3 )
+                {   ad.setMessage("3. ดี");  }
+                else if( rating == 2 )
+                {   ad.setMessage("2. พอใช้");  }
+                else if( rating == 1 )
+                {   ad.setMessage("1. แย่");  }
+                ad.show();
+                */
+
+            }
+        });
 
     }
 }
